@@ -3,7 +3,7 @@ published: true
 layout: post
 title: Hello prose.io
 categories: [other]
-tags:[其它]
+tags: [其它]
 ---
 
 ## A New Post
