@@ -1,12 +1,11 @@
 ---
 published: true
----
-
----
 layout: post
-title: hello prose io
-categories: [other]
-tags: [其它]
+title: github.io上的第一篇BLOG
+categories: 
+  - other
+tags: 
+  - 其它
 ---
 
 ## A New Post
