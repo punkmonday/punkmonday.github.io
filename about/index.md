@@ -1,27 +1,15 @@
 ---
 title: About me
 layout: page
-comments: yes
+comments: "yes"
+published: true
 ---
+
 
 # punkmonday
 
 
 
 # 个人兴趣
-
-
-
-
-
-
-
-
-
-
-
-博客模板是在[yihui xie](http://yihui.name/cn/)
-
-
-
+![weixinzhifu]({{site.baseurl}}/about/mm_facetoface_collect_qrcode_1450276341637.png)
 
