@@ -44,4 +44,12 @@ RUN apt-get update
 
 RUN apt-get upgrade -y
 
+＃private and public mapping
+EXPOSE 80:8080
+
+＃private only
+EXPOSE 80
+
+详见：[Dockerfile指令详解](http://seanlook.com/2014/11/17/dockerfile-introduction/ "Dockerfile指令详解")
+
 
