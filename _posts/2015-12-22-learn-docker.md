@@ -1,5 +1,10 @@
 ---
 published: false
+layout: post
+author: punkmonday
+categories: docker
+tags: 
+  - docker
 ---
 
 ##docker学习笔记
