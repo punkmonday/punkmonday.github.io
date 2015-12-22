@@ -1,11 +1,12 @@
 ---
-published: false
+published: true
 layout: post
 author: punkmonday
 categories: docker
 tags: 
   - docker
 ---
+
 
 ##docker学习笔记
 
@@ -51,5 +52,3 @@ EXPOSE 80:8080
 EXPOSE 80
 
 详见：[Dockerfile指令详解](http://seanlook.com/2014/11/17/dockerfile-introduction/ "Dockerfile指令详解")
-
-
