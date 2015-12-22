@@ -32,5 +32,16 @@ sudo run -d -p 8080:80 container_id  container的80端口映射到宿主8080端�
 sudo run -it container_id -i参数是启动时显示一个伪终端，可以与container交互
 
 ##dockerfile 命令简述
-dockerfile和docker类似于JAVA与MAVEN的关系，通过一个pom(dockerfile)来配置和构建一个image，这样就不需要下载庞大的image，只需要写一个dockerfile，并用docker build命令执行dockerfile,就可以生成一个image,方便开发者构建基于docker的程序
+dockerfile和docker类似于JAVA与MAVEN的关系，通过一个pom(dockerfile)来配置和构建一个image，这样就不需要下载庞大的image，只需要写一个dockerfile，并用docker build命令执行dockerfile,生成一个image,方便开发者构建基于docker的程序,docker相关语法：
+
+FROM ubuntu
+
+MAINTAINER Michael Crosby <michael@crosbymichael.com>
+
+RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt/sources.list
+
+RUN apt-get update
+
+RUN apt-get upgrade -y
+
 
