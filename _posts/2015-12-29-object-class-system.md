@@ -4,6 +4,8 @@ layout: post
 author: punkmonday
 categories: java
 tag: "-java"
+tags: 
+  - java
 ---
 
 先有对象,再有行为
