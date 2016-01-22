@@ -34,6 +34,7 @@ httpd
 1. down http://www.php.net/downloads.php
 2. 解压/php/ 将php.ini-development 复制改为php.ini
 3. open /Apache24/conf/httpd.conf 添加:
+
 ```
 # 
 LoadModule php5_module "C:/php/php5apache2.dll"
@@ -43,7 +44,9 @@ AddHandler application/x-httpd-php .php
 PHPIniDir "C:/php"
 
 ```
+
 4.打开mysql支持扩展extensions,open/php/php.ini
+
 ```
 ; Directory in which the loadable extensions (modules) reside.
 ; http://php.net/extension-dir
@@ -51,6 +54,7 @@ PHPIniDir "C:/php"
 ; On windows:
 extension_dir = "D:/yourPath/PHP/php-5.6.17-Win32-VC11-x64/ext"
 ```
+
 ```
 extension=php_curl.dll
 extension=php_gd2.dll
@@ -62,11 +66,13 @@ extension=php_xmlrpc.dll
 ```
 
 #测试脚本phpinfo.php,放到/Apache24/htdocs/
+
 ```php
 <?php
 phpinfo();
 ?>
 ```
+
 dbinfo.php 测试mysql连接
 ```php
 <?php
