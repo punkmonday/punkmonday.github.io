@@ -60,3 +60,18 @@ extension=php_mysqli.dll
 extension=php_pdo_mysql.dll
 extension=php_xmlrpc.dll
 ```
+
+#测试脚本phpinfo.php,放到/Apache24/htdocs/
+```php
+<?php
+phpinfo();
+?>
+```
+dbinfo.php 测试mysql连接
+```php
+<?php
+$link=mysqli_connect("localhost","yourname","yourpassword");
+if(!$link) echo "FAILD!";
+else echo "OK!";
+?>
+```
