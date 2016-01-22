@@ -20,14 +20,13 @@ tags:
 
 1. down http://www.apachehaus.com/cgi-bin/download.plx
 2. 解压apache2.4 修改/Apache24/conf/httpd.conf
-```
-Define SRVROOT "D:/yourpath/PHP/Apache24" //修改为apache所在目录
-ServerRoot "${SRVROOT}" //不需要修改
-```
+
+    Define SRVROOT "D:/yourpath/PHP/Apache24" //修改为apache所在目录
+    ServerRoot "${SRVROOT}" //不需要修改
+    
 3. 运行cmd,如果没有报错,可以访问localhost,说明apache安装成功
-```
-cd yourApachepath/bin
-httpd
-```
+
+    cd yourApachepath/bin
+    httpd
 
 # php install
