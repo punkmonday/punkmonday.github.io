@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title: php+apache环境安装
 categories: java
