@@ -43,3 +43,20 @@ AddHandler application/x-httpd-php .php
 PHPIniDir "C:/php"
 
 ```
+4.打开mysql支持扩展extensions,open/php/php.ini
+```
+; Directory in which the loadable extensions (modules) reside.
+; http://php.net/extension-dir
+; extension_dir = "./"
+; On windows:
+extension_dir = "D:/yourPath/PHP/php-5.6.17-Win32-VC11-x64/ext"
+```
+```
+extension=php_curl.dll
+extension=php_gd2.dll
+extension=php_mbstring.dll
+extension=php_mysql.dll
+extension=php_mysqli.dll
+extension=php_pdo_mysql.dll
+extension=php_xmlrpc.dll
+```
