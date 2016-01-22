@@ -8,6 +8,11 @@ tags:
   - php
 ---
 
-## A New Post
+# 系统环境
+* windows7
+* php5.6.17
+* apache2.4
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+注意php和apache2.4需要安装相应的windows visual c++ 2012 redistributeable runtime
+
+# php install
