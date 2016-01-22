@@ -74,6 +74,7 @@ phpinfo();
 ```
 
 dbinfo.php 测试mysql连接
+
 ```php
 <?php
 $link=mysqli_connect("localhost","yourname","yourpassword");
