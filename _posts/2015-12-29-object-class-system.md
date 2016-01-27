@@ -3,10 +3,12 @@ published: true
 layout: post
 author: punkmonday
 categories: java
-tag: "-java"
+tag: java
 tags: 
   - java
+title: OO思考记录
 ---
+
 
 
 ##记录一些对象探讨比较有意思的话:
