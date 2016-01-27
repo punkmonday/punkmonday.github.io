@@ -9,6 +9,7 @@ title: linux打包编译安装源代码
 ---
 
 
+
 > 安装\*.tar.gz\*.tar.bz2的文件(bz2比gz压缩效率更高,花费时间更多)
 
 1. tar
@@ -34,8 +35,8 @@ tar jxvf fileName.tar.bz2 /home/dir
 2. \./configure make make install
 
 ```shell
-#解压之后运行,./configure检测环境配置,make编译源代码制作软件,make install安装软件
-
+#解压之后cd到解压文件夹(有configure文件)运行./configure检测环境配置,make编译源代码制作软件,make #install安装软件
+cd fileNamedir
 ./configure
 make 
 make install
