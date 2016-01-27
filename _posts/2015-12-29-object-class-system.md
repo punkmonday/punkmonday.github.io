@@ -3,7 +3,8 @@ published: true
 layout: post
 author: punkmonday
 categories: java
-tag: java
+tag: 
+  - java
 tags: 
   - java
 title: OO思考记录
