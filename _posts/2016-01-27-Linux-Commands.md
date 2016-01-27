@@ -25,7 +25,16 @@ tar xvf fileName.tar
 #解压并提取文件到当前目录
 tar zxvf fileName.tar.gz
 tar jxvf fileName.tar.bz2
+#解压并提取文件到指定目录
+tar zxvf fileName.tar.gz /home/dir
+tar jxvf fileName.tar.bz2 /home/dir
 ```
 2. ./configure make make install
 
+```shell
+#解压之后运行,./configure检测环境配置,make编译源代码制作软件,make install安装软件
+./configure
+make 
+make install
+```
 
