@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 categories: java
 author: punkmonday
@@ -7,6 +7,7 @@ tags:
   - linux
 title: linux打包编译安装源代码
 ---
+
 
 > 安装\*.tar.gz\*.tar.bz2的文件(bz2比gz压缩效率更高,花费时间更多)
 
@@ -39,4 +40,3 @@ tar jxvf fileName.tar.bz2 /home/dir
 make 
 make install
 ```
-
