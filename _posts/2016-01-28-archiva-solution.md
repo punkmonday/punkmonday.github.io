@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title: archiva2.2 Password Expired solution
 author: punkmonday
@@ -9,6 +9,7 @@ tags:
   - archiva2.2
   - java
 ---
+
 
 archiva2.2 Password Expired, You must change your password.
 
