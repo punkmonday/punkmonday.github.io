@@ -13,4 +13,5 @@ tags:
 archiva2.2 Password Expired, You must change your password.
 
 >solution:
+
 >just change database `jdouser.LAST_PASSWORD_CHNAGE` set current time
