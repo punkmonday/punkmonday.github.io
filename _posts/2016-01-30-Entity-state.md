@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 author: punkmonday
 tags: 
@@ -9,6 +9,7 @@ categories:
   - java
 title: 实体自包含状态持久化
 ---
+
 
 ## 实体自包含的设计模式思考
 
