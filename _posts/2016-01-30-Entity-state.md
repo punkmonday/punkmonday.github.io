@@ -1,5 +1,12 @@
 ---
 published: false
+layout: post
+author: punkmonday
+tags: 
+  - java
+  - design pattern
+categories: 
+  - java
 ---
 
 ## 实体自包含的设计模式思考
