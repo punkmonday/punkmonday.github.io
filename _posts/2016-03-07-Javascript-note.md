@@ -10,6 +10,7 @@ tags:
 ---
 
 
+
 javacript是对象语言,没有类,function是一个对象,可以声明和作为表达式来用:
 
 作为声明:
@@ -53,9 +54,9 @@ func(test); //return hello;
 
 function test2(name){ console.log(name) }
 
-function func2(test2){
-	test2(name);
+function func2(data,test2){
+	test2(data);
 }
 
-func2(test2("hello name"));
+func2("hello", test2);
 ```
