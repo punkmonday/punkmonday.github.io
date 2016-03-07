@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title: Javascript函数和函数表达式
 author: punkmonday
@@ -8,6 +8,7 @@ categories:
 tags: 
   - javascript
 ---
+
 
 javacript是对象语言,没有类,function是一个对象,可以声明和作为表达式来用:
 
@@ -37,5 +38,3 @@ var a = function(){ console.log("hello")};
 ```
 var person = { name:"hello",age: 20, sayhi: function(name){ console.log( name )}}
 ```
-
-
