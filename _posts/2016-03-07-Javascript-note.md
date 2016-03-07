@@ -34,6 +34,8 @@ var a = function(){ console.log("hello")};
 ```
 
 对象字面量
+```
 var person = { name:"hello",age: 20, sayhi: function(name){ console.log( name )}}
+```
 
 
