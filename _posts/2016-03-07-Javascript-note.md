@@ -35,6 +35,27 @@ var a = function(){ console.log("hello")};
 ```
 
 对象字面量
+
 ```
 var person = { name:"hello",age: 20, sayhi: function(name){ console.log( name )}}
+```
+
+函数作为对象参数传递
+
+```
+function func(test){
+	test();
+}
+
+function test(){ console.log("hello") }
+
+func(test); //return hello;
+
+function test2(name){ console.log(name) }
+
+function func2(test2){
+	test2(name);
+}
+
+func2(test2("hello name"));
 ```
