@@ -1,6 +1,6 @@
-markdown: rdiscount
+markdown: redcarpet
 permalink: /:year/:month/:title/
 url: http://punkmonday.github.io
 author: punkmonday
-pygments: true
+highlighter: pygments
 
