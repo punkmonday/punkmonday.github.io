@@ -1,6 +1,5 @@
 ---
 published: false
 ---
-## A New Post
+java单一职责强调类在职责上的单一和统一
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
