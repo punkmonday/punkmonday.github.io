@@ -60,3 +60,14 @@ function func2(data,test2){
 
 func2("hello", test2);
 ```
+
+函数作为构造函数
+
+```
+function a(){console.log("a");}
+
+var aa =new a();
+
+var bb =new function(){console.log("bb");}
+```
+
