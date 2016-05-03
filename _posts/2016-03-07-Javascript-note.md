@@ -69,5 +69,21 @@ function a(){console.log("a");}
 var aa =new a();
 
 var bb =new function(){console.log("bb");}
+这里相当于
+var bb = new 匿名类(){console.log("bb");}
 ```
 
+所以函数这样都是可以的
+
+```
+var c  = function(){
+
+			console.log("cc");
+		}
+
+		c();
+
+		var b = new c();
+
+		console.log(b);
+```
