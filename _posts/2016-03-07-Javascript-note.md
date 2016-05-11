@@ -35,6 +35,25 @@ var a = function(){ console.log("hello")};
 (function(a,b){ console.log(a+b)})(1,2); //return 3;
 ```
 
+函数声明和函数表达式的区别:
+
+```
+alert(foo); // function foo() {}
+alert(bar); // undefined
+function foo() {}
+var bar = function bar_fn() {};
+alert(foo); // function foo() {}
+alert(bar); // function bar_fn() {}
+```
+
+JavaScript 引擎执行以上代码的顺序可能是这样的：
+
+创建变量 foo 和 bar，并将它们都赋值为 undefined。
+创建函数 foo 的函数体，并将其赋值给变量 foo。
+执行前面的两个 alert。
+创建函数 bar_fn，并将其赋值给 bar。
+执行后面的两个 alert。
+
 对象字面量
 
 ```
