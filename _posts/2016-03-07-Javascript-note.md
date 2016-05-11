@@ -96,7 +96,6 @@ var bb = new 匿名类(){console.log("bb");}
 
 ```
 var c  = function(){
-
 			console.log("cc");
 		}
 
