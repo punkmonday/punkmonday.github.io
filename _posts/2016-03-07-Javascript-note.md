@@ -103,5 +103,5 @@ var c  = function(){
 
 		var b = new c();
 
-		console.log(b);
+		console.log(b); //会先执行c函数,然后将值赋值给b,这里b将会输出c的对象字面量字符串
 ```
