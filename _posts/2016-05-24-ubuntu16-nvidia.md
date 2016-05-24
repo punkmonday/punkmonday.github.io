@@ -24,7 +24,7 @@ title: ubuntu16.04安装专有nvidia显卡驱动之后，亮度调节失效解�
 sudo subl /usr/share/X11/xorg.conf.d/20-nvidia.conf
 ```
 
-如果为空，就说明没有这个文件，打开dash找到"NVIDIA X Server Settings"程序，找到 "X Server Display Configuration",点击"Save to X Configuration"保存n卡信息，然后打开备份的文件，滚动到Section "Device",复制以下内容，比如我的如下：
+如果为空，就说明没有这个文件，打开dash找到"NVIDIA X Server Settings"程序，找到 "X Server Display Configuration",点击"Save to X Configuration"保存n卡信息，然后打开备份的文件，滚动到Section "Device",复制以下内容到20-nvidia.conf文件，比如我的如下：
 
 ```sh
 Section "Device"
