@@ -1,6 +1,6 @@
 ---
-published: false
-layout: post_
+published: true
+layout: post
 title: "jsf2 converter加入之后,无法set到Managebean坑记录"
 author: punkmonday
 categories: java
