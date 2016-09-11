@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title: Raspberry pi 3 安装日志
 author: punkmonday
