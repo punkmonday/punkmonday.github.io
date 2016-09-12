@@ -1,5 +1,12 @@
 ---
 published: false
+layout: post
+title: shell脚本逻辑运算
+author: punkmonday
+tags:
+  - linux
+categories:
+  - linux
 ---
 shell脚本引号问题记录
 ```
