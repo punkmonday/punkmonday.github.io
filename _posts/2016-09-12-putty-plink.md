@@ -30,7 +30,7 @@ if %a%==100 echo "true
 ::多行写法
 if %a%==100 (
   goto A
-) else (
+) else ( ::注意这个地方不能换行,否则无法识别else语句
   goto B
 )
 ::标签A
