@@ -24,7 +24,7 @@ bat注意
 set a=100 
 ::中间不能有空格,变量赋值
 if %a%==100 ( echo "true" ) else echo "false" 
-::if语句单行写法括号不运行省略,否则出错
+::if语句单行写法括号不允许省略,否则出错
 if %a%==100 echo "true 
 ::此处不加else没问题,加了else报错
 ::多行写法
