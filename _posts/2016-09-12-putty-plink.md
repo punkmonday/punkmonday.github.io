@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 author: punkdmonday
 title: putty命令行工具plink日志
