@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title: shell脚本逻辑运算
 author: punkmonday
