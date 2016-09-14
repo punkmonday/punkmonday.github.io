@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title: bat shift命令用法
 author: punkmonday
