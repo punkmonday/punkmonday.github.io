@@ -26,7 +26,7 @@ if %a%==100 (
 ) else ( ::注意这个地方不能换行,否则无法识别else语句
   goto B
 )
-::标签A
+::标签A A后需要换行,不换行会被作为表前端名称字符串 比如 : A echo "true" 
 :A
 echo "true"
 goto end
