@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title: windows下的packageManager
 author: punkmonday
