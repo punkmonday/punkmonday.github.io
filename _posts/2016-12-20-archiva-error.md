@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title: 'archiva 2.2 无法下载仓库已有的jar,解决方法'
 author: punkmonday
