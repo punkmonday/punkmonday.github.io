@@ -6,6 +6,7 @@ tags:
   - java
 categories:
   - java
+title: 依赖和关联的区别
 ---
 ```java
 public class Person{
