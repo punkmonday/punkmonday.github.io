@@ -1,5 +1,11 @@
 ---
 published: false
+layout: post
+author: punkmonday
+tags:
+  - java
+categories:
+  - java
 ---
 ```java
 public class Person{
