@@ -48,12 +48,19 @@ public class DemoE{
 		p.sayHello();
 	}
 
+	public void sayagain(){
+		System.out.print("hello this is a DemoE and ");
+		p.sayHello();
+	}
+
 	public static void main(String[] args){
 		DemoE d =new DemoE();
 		d.setPerson(new Person());
 		d.say();
+		d.sayagain();
 	}
 }
+
 ```
 
 以上代码都是同一个功能,只是设计上的区别,依赖关系(DemoUtil)只是需要传递一个对象来完成一个过程,没有状态,关联关系(DemoE),会维持一个状态,封装了成员的状态,后续的方法依然会使用成员进行其他操作.
