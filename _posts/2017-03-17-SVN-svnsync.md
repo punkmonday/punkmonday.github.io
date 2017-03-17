@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title: SVN svnsync远程同步库
 author: punkmonday
