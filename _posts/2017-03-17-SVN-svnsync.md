@@ -1,5 +1,12 @@
 ---
 published: false
+layout: post
+title: SVN svnsync远程同步库
+author: punkmonday
+tags:
+  - java
+categories:
+  - java
 ---
 源地址(需要同步):http://ccc.ccc.com/svn/project  
 目标地址(同步到此地址):/var/home/user/repo/project
