@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 author: punkmonday
 title: teamspeaker3 server 安装
