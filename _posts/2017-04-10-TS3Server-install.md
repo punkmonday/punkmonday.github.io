@@ -46,3 +46,10 @@ crontab -e
 
 
 ```
+
+add password to server
+
+```
+right click edit virtual machine -> password 
+enter password
+```
