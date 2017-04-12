@@ -21,6 +21,6 @@ user server等同于对外开放server,让confluence等app来同步,confluence�
 
 参见:
 
-https://confluence.atlassian.com/doc/connecting-to-crowd-or-jira-for-user-management-229838465.html
+[connectiing to crowd or jira for user management](https://confluence.atlassian.com/doc/connecting-to-crowd-or-jira-for-user-management-229838465.html "connectiing to crowd or jira for user management")
 
-https://confluence.atlassian.com/fisheye/connecting-to-jira-for-user-management-812223142.html
+[connecting to jira for user management](https://confluence.atlassian.com/fisheye/connecting-to-jira-for-user-management-812223142.html)
