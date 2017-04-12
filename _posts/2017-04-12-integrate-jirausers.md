@@ -24,3 +24,60 @@ user server等同于对外开放server,让confluence等app来同步,confluence�
 [connectiing to crowd or jira for user management](https://confluence.atlassian.com/doc/connecting-to-crowd-or-jira-for-user-management-229838465.html "connectiing to crowd or jira for user management")
 
 [connecting to jira for user management](https://confluence.atlassian.com/fisheye/connecting-to-jira-for-user-management-812223142.html)
+
+__tips
+
+如果配置nginx的时候,注意confluence和jira安装在server.xml里配置前缀/fisheye /confluence:
+
+```
+
+<Context path="jira" docBase="${catalina.home}/atlassian-jira" reloadable="false" useHttpOnly="true">
+
+<Context path="/confluence" docBase="../confluence" debug="0" reloadable="false" useHttpOnly="true">
+
+```
+
+nginx里配置:
+
+```
+
+location /jira {
+                proxy_pass http://localhost:8081;
+                proxy_buffers 8 24k;
+                proxy_buffer_size 2k;
+                proxy_http_version 1.1;
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header Host $host:$server_port;
+                proxy_set_header Connection "upgrade";
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header Via "nginx";
+        }
+location /confluence {
+                proxy_pass http://localhost:8090;
+                proxy_buffers 8 24k;
+                proxy_buffer_size 2k;
+                proxy_http_version 1.1;
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header Host $host:$server_port;
+                proxy_set_header Connection "upgrade";
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header Via "nginx";
+        }
+
+location /fisheye {
+                proxy_pass http://localhost:8060;
+                proxy_buffers 8 24k;
+                proxy_buffer_size 2k;
+                proxy_http_version 1.1;
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header Host $host:$server_port;
+                proxy_set_header Connection "upgrade";
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header Via "nginx";
+        }
+
+
+```
