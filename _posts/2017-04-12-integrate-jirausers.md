@@ -27,7 +27,7 @@ user server等同于对外开放server,让confluence等app来同步,confluence�
 
 __tips
 
-如果配置nginx的时候,注意confluence和jira安装在server.xml里配置前缀/fisheye /confluence:
+配置nginx,注意confluence和jira安装在server.xml里配置前缀/fisheye /confluence,base url也带prefix,fisheye的可以到界面上修改administraion-Global Settings-server - Web context /fisheye
 
 ```
 
