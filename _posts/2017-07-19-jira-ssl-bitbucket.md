@@ -18,6 +18,8 @@ jira fisheye 建立application link到https(SSL)的bitbucket server,oauth握手�
 
 把bitbucket server的证书导出,再导入到jira or fisheye的服务器,需要导入到jdk下的/jre/lib/security/cacerts下面
 
+__注意,默认密码为changeit,需要重新修改一下,参考keystore change passwrods
+
 # 参考
 
 [Problem creating an Application Link from JIRA to a HTTPS Bitbucket Server (or vice-versa)](https://confluence.atlassian.com/bitbucketserverkb/problem-creating-an-application-link-from-jira-to-a-https-bitbucket-server-or-vice-versa-779171870.html)
