@@ -23,6 +23,8 @@ sudo nginx -s reload
 
 ## 参考
 
+[Securing Bitbucket Server behind nginx using SSL](https://confluence.atlassian.com/bitbucketserver/securing-bitbucket-server-behind-nginx-using-ssl-776640112.html)
+
 [Securing Bitbucket Server with Tomcat using SSL](https://confluence.atlassian.com/bitbucketserver/securing-bitbucket-server-with-tomcat-using-ssl-776640127.html)
 
 [给Nginx配置一个自签名的SSL证书](https://www.liaoxuefeng.com/article/0014189023237367e8d42829de24b6eaf893ca47df4fb5e000)
