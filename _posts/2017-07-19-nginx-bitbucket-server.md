@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-title: nginx+bitbucket server 组件https服务
+title: nginx+bitbucket server组建https服务
 author: punkmonday
 tag:
   - nginx
