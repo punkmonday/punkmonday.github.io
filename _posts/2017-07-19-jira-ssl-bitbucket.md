@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title: jira link到ssl的bitbucket server注意事项
 author: punkmonday
@@ -25,3 +25,5 @@ jira fisheye 建立application link到https(SSL)的bitbucket server,oauth握手�
 [Keystore change passwords](https://stackoverflow.com/questions/2889238/keystore-change-passwords)
 
 [Unable to Connect to SSL Services due to PKIX Path Building Failed](https://confluence.atlassian.com/kb/unable-to-connect-to-ssl-services-due-to-pkix-path-building-failed-779355358.html)
+
+[Connecting to SSL services](https://confluence.atlassian.com/kb/connecting-to-ssl-services-802171215.html)
