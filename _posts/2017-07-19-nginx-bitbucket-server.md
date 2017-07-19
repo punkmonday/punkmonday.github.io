@@ -13,12 +13,9 @@ categories:
 
 1.nginx配置好ssl 443端口,使用gencrt.sh生成证书,并配置好自签证书
 
-``
-
+```
 sudo nginx -s reload
-
-
-``
+```
 
 2.bitbucket server调整好相关的参数,在$BITBUCKET_HOME/shared/bitbucket.properties添加443端口参数
 
