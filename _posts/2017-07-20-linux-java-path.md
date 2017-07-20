@@ -9,7 +9,7 @@ categories:
   - java
 ---
 ```
-JAVA_HOME=/usr/java/jdk1.8.131
+JAVA_HOME=/usr/java/jdk1.8.0_131
 export JAVA_HOME
 PATH=$JAVA_HOME/bin:$PATH
 export PATH
