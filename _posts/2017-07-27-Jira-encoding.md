@@ -16,3 +16,9 @@ $JIRA_INSTALL_HOME/bin/setenv.sh修改:
 ```
 JVM_SUPPORT_RECOMMENDED_ARGS="-Dfile.encoding=utf-8"
 ```
+
+参考:
+
+[JIRA Knowledge Base JIRA Application internationalisation and encoding troubleshooting](https://confluence.atlassian.com/jirakb/jira-application-internationalisation-and-encoding-troubleshooting-203394762.html)
+
+[Setting properties and options on startup](https://confluence.atlassian.com/adminjiraserver070/setting-properties-and-options-on-startup-749383528.html)
