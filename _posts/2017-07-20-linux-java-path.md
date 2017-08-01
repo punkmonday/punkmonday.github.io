@@ -26,3 +26,7 @@ alternatives --install /usr/bin/java java /usr/java/jdk1.8.0_144/bin/java 200000
 ## 切换java使用新版的jdk
 alternatives --config java
 ```
+
+参考:
+
+[Install Oracle Java JDK 8 On CentOS 7/6.5/6.4](https://www.unixmen.com/install-oracle-java-jdk-8-centos-76-56-4/)
