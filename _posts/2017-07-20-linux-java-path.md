@@ -12,10 +12,17 @@ categories:
 $: sudo vim /etc/profile
 
 
-JAVA_HOME=/usr/java/jdk1.8.0_131
+JAVA_HOME=/usr/java/jdk1.8.0_144
 export JAVA_HOME
 PATH=$JAVA_HOME/bin:$PATH
 export PATH
 ```
 
-tips: /etc/profile是所有用户登录系统都要执行的文件,全局环境变量通常设置在这里
+tips: /etc/profile是所有用户登录系统都要执行的文件,全局环境变量通常设置在这里,如果之前安装过open_jdk,有可能/user/bin/java依然是openjdk的java,需要使用alternatives切换java
+
+```
+## java ##
+alternatives --install /usr/bin/java java /usr/java/jdk1.8.0_144/bin/java 200000
+## 切换java使用新版的jdk
+alternatives --config java
+```
