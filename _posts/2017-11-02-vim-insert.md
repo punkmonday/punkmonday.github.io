@@ -10,8 +10,8 @@ categories:
 ---
 ## 插入模式下 ctrl+xf(按住ctrl + xf)就会进入自动补全路径模式
 
-ctrl+n next path
-ctrl+p previous path
+#ctrl+n next path
+#ctrl+p previous path
 
 继续按ctrl+xf就会继续插入路径
 
