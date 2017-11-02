@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title: vim插入模式下ctrl+XF插入文件路径
 author: punkmonday
