@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title: 大架构的模型穿越
 author: punkmonday
