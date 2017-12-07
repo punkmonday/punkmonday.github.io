@@ -12,7 +12,7 @@ categories:
 
 
 ```java
-//一个应用服务，把传递过来的aTenantId转变为Forum领域的Author
+//一个应用服务，把传递过来的anAuthorId转变为Forum领域的Author
 public class ForumApplicationService { 
 	public void startExclusiveForumWithDiscussion(
             String aTenantId,
