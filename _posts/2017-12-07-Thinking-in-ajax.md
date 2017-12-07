@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title: '什么时候该AJAX,什么时候该跳转页面'
 author: punkmonday
