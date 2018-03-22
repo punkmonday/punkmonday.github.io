@@ -11,5 +11,5 @@ categories:
 加`符号
 
 ```
-drop database `test-database`
+drop database `test-database`;
 ```
