@@ -4,5 +4,6 @@ layout: page
 comments: 'yes'
 published: true
 ---
-![weixinzhifu]({{site.baseurl}}/about/mm_facetoface_collect_qrcode_1471760851570.png)
+![weixinzhifu]({{site.baseurl}}/about/weixin_pay.png)
+![weixinzhangshang]({{site.baseurl}}/about/zhanshang.png)
 ![zhifubao]({{site.baseurl}}/about/1471760904529.jpg)
