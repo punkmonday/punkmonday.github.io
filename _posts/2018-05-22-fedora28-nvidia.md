@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title: fedora28安装nvidia显卡驱动
 author: punkmonday
@@ -16,6 +16,3 @@ categories:
 nvidia-smi
 cat /proc/driver/nvidia/version
 ```
-
-
-
