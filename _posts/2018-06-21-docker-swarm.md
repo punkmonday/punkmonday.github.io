@@ -74,10 +74,10 @@ curl -L https://github.com/dhiltgen/docker-machine-kvm/releases/download/v0.10.0
 ## 组装集群
 
 ```sh
-docker-machine create -d kvm -name master
-docker-machine create -d kvm -name slave1
-docker-machine create -d kvm -name slave2
-docker-machine create -d kvm -name slave3
+docker-machine create -d kvm master
+docker-machine create -d kvm slave1
+docker-machine create -d kvm slave2
+docker-machine create -d kvm slave3
 
 docker-machine ssh master 
 //初始化 master节点为manager
