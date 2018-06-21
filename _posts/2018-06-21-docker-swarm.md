@@ -74,6 +74,25 @@ curl -L https://github.com/dhiltgen/docker-machine-kvm/releases/download/v0.10.0
 ## 组装集群
 
 ```sh
+docker-machine create -d kvm -name master
+docker-machine create -d kvm -name slave1
+docker-machine create -d kvm -name slave2
+docker-machine create -d kvm -name slave3
 
+docker-machine ssh master 
+//初始化 master节点为manager
+docker swarm init --advertise-addr 192.168.99.100
+//分别进入slave节点,加入master
+ocker swarm join --token SWMTKN-1-1uzft9zcrd5cl7eva4gr4ptgrs1gc252483ey19xfphcuxc8ta-evsmmj7b7kleh7yoezjutzuu2 192.168.99.100:2377
+//进入master节点,查看node
+docker node ls 
+//创建服务
+docker service create --replicas 2 -d -p 8080:80 --name mynginx registry.docker-cn.com/library/nginx
+//查看创建的服务
+docker service ls
+docker service ps mynginx
+//使用浏览器可以查看到各个节点上的nginx,表示集群安装完成
+//服务扩容为3个实例
+docker service scale mynginx=3
 ```
 
