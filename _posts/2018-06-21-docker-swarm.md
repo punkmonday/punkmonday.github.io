@@ -83,7 +83,7 @@ docker-machine ssh master
 //初始化 master节点为manager
 docker swarm init --advertise-addr 192.168.99.100
 //分别进入slave节点,加入master
-ocker swarm join --token SWMTKN-1-1uzft9zcrd5cl7eva4gr4ptgrs1gc252483ey19xfphcuxc8ta-evsmmj7b7kleh7yoezjutzuu2 192.168.99.100:2377
+docker swarm join --token SWMTKN-1-1uzft9zcrd5cl7eva4gr4ptgrs1gc252483ey19xfphcuxc8ta-evsmmj7b7kleh7yoezjutzuu2 192.168.99.100:2377
 //进入master节点,查看node
 docker node ls 
 //创建服务
