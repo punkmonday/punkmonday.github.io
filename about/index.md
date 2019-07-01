@@ -12,7 +12,7 @@ published: true
 
 # 个人信息
 
- -  fay/男
+ - fay/男
  - 微博：[@punkflyer](https://weibo.com/flyer2009)
  - 技术博客：https://punkmonday.github.io
  - Github：https://github.com/punkmonday
@@ -24,7 +24,6 @@ published: true
 ## 昆明群林科技 （ 2018年9月 ~ 2019年2月 ）
 
 - 云南省官渡区政府数据共享平台
-
 - 云南省新螺蛳湾大数据汇聚平台
 
 ## 昆明w4u软硬件开发部 （ 2014年4月 ~ 2018年8月 ）
