@@ -1,5 +1,11 @@
 ---
-published: false
+published: true
+layout: post
+author: punkmonday
+tags:
+  - Life
+categories:
+  - Life
 ---
 ## 技术营销
 
