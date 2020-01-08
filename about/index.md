@@ -12,7 +12,7 @@ published: true
 
 # 个人信息
 
- - Frey/男
+ - Flow/男
  - 微博：[@punkflyer](https://weibo.com/flyer2009)
  - 技术博客：https://punkmonday.github.io
  - Github：https://github.com/punkmonday
