@@ -1,7 +1,6 @@
 ---
 title: About me
 layout: page
-comments: 'yes'
 published: true
 ---
 
@@ -12,12 +11,10 @@ published: true
 
 # 个人信息
 
- - Flow/男
+ - Fei/男
  - 微博：[@punkflyer](https://weibo.com/flyer2009)
  - 技术博客：https://punkmonday.github.io
  - Github：https://github.com/punkmonday
- - 期望职位：攻城狮...
- - 期望城市：昆明
 
 # 工作经历
 
