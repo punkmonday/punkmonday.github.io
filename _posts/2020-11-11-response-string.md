@@ -15,7 +15,7 @@ public String sayHello(String char){
 }
 ```
 
-返回的数据会叠加""转义为`"\\\"hello\\\""`,处理方法：
+返回的数据会叠加""转义为`"\\\\"hello\\\\""`,处理方法：
 
 ```
 @GetMapping(value="/sayHello",produces = "text/plain;charset=utf-8")
