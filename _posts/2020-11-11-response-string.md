@@ -3,7 +3,7 @@ published: true
 author: punkmonday
 layout: post
 tags:
-  - jpa
+  - java
 categories:
   - java
 ---
