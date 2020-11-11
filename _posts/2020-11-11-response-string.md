@@ -3,9 +3,10 @@ published: true
 author: punkmonday
 layout: post
 tags:
-  - java
+  - jpa
 categories:
   - java
+title: springboot controller 返回字符串类型叠加双引号处理办法
 ---
 ## Springboot controller返回String 自动叠加""处理办法
 
