@@ -186,6 +186,15 @@ flushDiskType=ASYNC_FLUSH
 nginx
 
 ```
+    upstream mq9876 {
+        server 10.2.0.4:9876 weight=5 max_fails=3 fail_timeout=30s;
+    }
+    server {
+        listen 12006;
+        proxy_pass mq9876;
+        proxy_timeout 600s;
+        proxy_connect_timeout 30s;
+    }
     upstream mq12021 {
         server 10.2.0.4:12021 weight=5 max_fails=3 fail_timeout=30s;
     }
