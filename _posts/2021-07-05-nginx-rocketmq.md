@@ -84,12 +84,9 @@ networks:
   rmq:
     name: rmq
     driver: bridge
-
-
 ```
 
 broker.conf
-
 
 ```
 #  Unless required by applicable law or agreed to in writing, software
