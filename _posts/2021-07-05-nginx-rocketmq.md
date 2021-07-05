@@ -21,7 +21,7 @@ title: nginx内网转发rocketmq sendDefaultImpl timeout
 1. 修改/rmq/rmq/brokerconf/broker.conf, brokerIP1改为外网地址, listenPort改为12021
 2. 修改docker-comopse.yml,broker端口映射 12019:12019 12021:12021
 3. docker-compose down, 从新运行start.sh
-4. ngin修改转发stream端口 12021 -> 内网12021 12019 -> 12019
+4. ngin修改转发stream端口 12021 -> 12021  12019 -> 12019
 
 ### 参考脚本
 
