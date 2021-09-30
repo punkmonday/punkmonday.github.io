@@ -1,11 +1,5 @@
 ---
-published: false
-author: punkmonday
-layout: post
-tags:
-  - java
-categories:
-  - java
+published: true
 ---
 # 安高科健康码接口文档
 ## 1 简介
@@ -181,4 +175,3 @@ post
  }
 }
 ~~~
-
