@@ -1,5 +1,16 @@
 permalink: /:year/:month/:title/
 url: https://punkmonday.github.io
+title: punkmonday's blog
+description: punkmonday 的技术博客 — Java、Spring、Docker、Linux 与折腾笔记
 author: punkmonday
+lang: zh-CN
 highlighter: rouge
 
+plugins:
+  - jekyll-feed
+
+feed:
+  path: feed.xml
+
+exclude:
+  - README.md

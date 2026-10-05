@@ -36,24 +36,17 @@ layout: default
 </section>
 {% include comments_disqus.md %}
 <script type="text/javascript">
-$(function(){
-  $(document).keydown(function(e) {
-    if (e.target.nodeName.toUpperCase() != 'BODY') return;
-    var url = false;
-        if (e.which == 37 || e.which == 74) {  // Left arrow and J
-            {% if page.previous %}
-        url = '{{ site.url }}{{ page.previous.url }}';
-        {% endif %}
-        }
-        else if (e.which == 39 || e.which == 75) {  // Right arrow and K
-            {% if page.next %}
-        url = '{{ site.url }}{{ page.next.url }}';
-        {% endif %}
-        }
-        if (url) {
-            window.location = url;
-        }
+/* Keyboard navigation: ←/J previous post, →/K next post (no jQuery needed) */
+(function () {
+  var prev = {% if page.previous %}'{{ site.url }}{{ page.previous.url }}'{% else %}null{% endif %};
+  var next = {% if page.next %}'{{ site.url }}{{ page.next.url }}'{% else %}null{% endif %};
+  document.addEventListener('keydown', function (e) {
+    if (e.target && e.target.nodeName.toUpperCase() !== 'BODY') return;
+    var url = null;
+    if (e.which === 37 || e.which === 74) url = prev;
+    else if (e.which === 39 || e.which === 75) url = next;
+    if (url) window.location = url;
   });
-})
+})();
 </script>
 

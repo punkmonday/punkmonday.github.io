@@ -1,5 +1,6 @@
 ---
 published: true
+layout: post
 ---
 # 安高科健康码接口文档
 ## 1 简介

@@ -1,6 +1,6 @@
 ---
 published: true
-layot: post
+layout: post
 title: 集成jira账号到confluence fisheye注意事项
 author: punkmonday
 tags:

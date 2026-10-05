@@ -1,5 +1,6 @@
 ---
 published: true
+layout: post
 ---
 ## 如何使用工具DataWindow2.5
 

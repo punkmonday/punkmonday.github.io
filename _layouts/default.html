@@ -1,42 +1,61 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{{ site.lang | default: 'zh-CN' }}" lang="{{ site.lang | default: 'zh-CN' }}">
   <head>
+    <meta charset="utf-8">
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="{{ site.author }}" />
-    <title>{{ page.title }} | {{ site.author }}</title>
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link href="{{ site.url }}/feed/" rel="alternate" title="{{ site.author }}" type="application/atom+xml" />
-    <link rel="stylesheet" href="/media/css/style.css">
+    <meta name="theme-color" content="#d9363e">
+    {% assign page_desc = page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 %}
+    <meta name="description" content="{{ page_desc }}">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.author }}</title>
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:description" content="{{ page_desc }}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate" type="application/atom+xml" title="{{ site.author }}" href="{{ site.url }}/feed.xml" />
     <link rel="stylesheet" href="/media/css/highlight.css">
-    <script type="text/javascript" src="/media/js/jquery-1.7.1.min.js"></script>
+    <link rel="stylesheet" href="/media/css/style.css">
   </head>
   <body>
+    <nav class="topnav">
+      <div class="topnav-inner">
+        <a class="brand" href="{{ site.url }}/">punkmonday<span>.</span></a>
+        <div class="topnav-links">
+          <a href="{{ site.url }}/" {% if page.url == '/' %}class="active"{% endif %}>home</a>
+          <a href="{{ site.url }}/about/" {% if page.url == '/about/' %}class="active"{% endif %}>about</a>
+          <a href="{{ site.url }}/categories/" {% if page.url == '/categories/' %}class="active"{% endif %}>categories</a>
+          <a href="{{ site.url }}/tags/" {% if page.url == '/tags/' %}class="active"{% endif %}>tags</a>
+          <a href="{{ site.url }}/links/" {% if page.url == '/links/' %}class="active"{% endif %}>links</a>
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="切换深浅色模式">
+            <span class="icon-moon">🌙</span>
+            <span class="icon-sun">☀️</span>
+          </button>
+        </div>
+      </div>
+    </nav>
     <div id="container">
       <div id="main" role="main">
         <header>
         <h1>{{ page.title }}</h1>
         </header>
-        <nav>
-        <span><a title="home page" class="" href="{{ site.url }}/">home</a></span>
-        <span><a title="about" class="" href="{{ site.url }}/about/">about</a></span>
-        <span><a title="categories" class="" href="{{ site.url }}/categories/">categories</a></span>
-        <span><a title="tags" class="" href="{{ site.url }}/tags/">tags</a></span>
-        <span><a title="links" class="" href="{{ site.url }}/links/">links</a></span>
-        </nav>
         <article class="content">
         {{ content }}
         </article>
       </div>
     </div>
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-1988641-2']);
-      _gaq.push(['_trackPageview']);
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
+    <footer class="footer">
+      <span>© {{ site.time | date: '%Y' }} {{ site.author }}</span>
+      <span>
+        <a href="https://github.com/punkmonday">GitHub</a>
+        ·
+        <a href="{{ site.url }}/feed.xml">RSS</a>
+      </span>
+    </footer>
+    <script type="text/javascript" src="/media/js/theme.js"></script>
   </body>
 </html>
