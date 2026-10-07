@@ -1,7 +1,10 @@
 ---
-published: true
 layout: post
+published: true
+title: 如何使用工具DataWindow2.5
+author: punkmonday
 ---
+
 ## 如何使用工具DataWindow2.5
 
 ### 前置条件: 安装好对应的datawindow版本
