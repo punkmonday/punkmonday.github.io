@@ -503,16 +503,18 @@ li {
   color: var(--muted);
 }
 
-.listing-item a {
-  color: var(--text);
+/* listing rows live inside .content; scope past `.content a[:hover]` so the
+   hover foreground wins over the generic content-link yellow */
+.content .listing-item a {
+  color: var(--cyan);
 }
 
-.listing-item a:hover {
+.content .listing-item:hover a {
   color: var(--on-accent-soft);
   text-shadow: var(--on-accent-soft-glow);
 }
 
-.listing-item:hover time {
+.content .listing-item:hover time {
   color: var(--text-dim);
 }
 
