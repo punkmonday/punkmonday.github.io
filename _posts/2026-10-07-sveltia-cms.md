@@ -9,4 +9,4 @@ tags:
   - java
 ---
 
-**测试一下从sveltia cms后台新建一个post.**
+**测试一下从sveltia cms后台新建一个post.成功**
