@@ -9,13 +9,6 @@ published: true
 - Email：punkflyer@gmail.com
 - QQ/微信号：190169707/fff_fff2017
 
-# 个人信息
-
- - Fei/男
- - 微博：[点开看嘛](https://weibo.com/flyer2009)
- - 技术博客：[点开看嘛](https://punkmonday.github.io)
- - Github：[点开看嘛](https://github.com/punkmonday)
-
 # 工作经历
 
 ## 昆明群林科技 （ 2018年9月 ~ 2019年2月 ）
