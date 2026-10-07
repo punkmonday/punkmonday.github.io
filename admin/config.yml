@@ -15,10 +15,11 @@ backend:
   name: github
   repo: punkmonday/punkmonday.github.io
   branch: master
-  # Token sign-in only. To enable one-click "Sign in with GitHub", deploy an
-  # OAuth client (e.g. https://github.com/sveltia/sveltia-cms-auth) and add
-  # `base_url: <your-worker-url>` here, then drop the auth_methods line below.
-  auth_methods: [token]
+  # OAuth client: Sveltia CMS Authenticator deployed on Cloudflare Workers.
+  # Provides the one-click "Sign in with GitHub" button.
+  base_url: https://sveltia-cms-auth.punkflyer.workers.dev
+  # Keep both sign-in methods: one-click OAuth, and personal access token.
+  auth_methods: [oauth, token]
 
 # Emptied optional fields are omitted from the output. This keeps posts that
 # have no front-matter `title` on Jekyll's filename-derived title, and avoids
