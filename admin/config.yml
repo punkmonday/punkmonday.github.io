@@ -30,6 +30,11 @@ output:
 site_url: https://punkmonday.github.io
 display_url: https://punkmonday.github.io
 
+# Admin branding
+app_title: punkmonday · 内容管理
+logo:
+  src: /favicon.svg
+
 # Uploaded images are stored in images/uploads/ and referenced as
 # /images/uploads/<filename>.
 media_folder: images/uploads
