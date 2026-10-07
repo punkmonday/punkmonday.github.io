@@ -9,6 +9,9 @@
   try { saved = localStorage.getItem('theme'); } catch (e) {}
   if (saved === 'light' || saved === 'dark') {
     root.setAttribute('data-theme', saved);
+  } else {
+    /* cyberpunk default: always start in the dark */
+    root.setAttribute('data-theme', 'dark');
   }
 
   function current() {

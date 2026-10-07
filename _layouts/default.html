@@ -5,7 +5,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="{{ site.author }}" />
-    <meta name="theme-color" content="#d9363e">
+    <meta name="theme-color" content="#07080b">
     {% assign page_desc = page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 %}
     <meta name="description" content="{{ page_desc }}">
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.author }}</title>
@@ -18,13 +18,40 @@
     <meta name="twitter:card" content="summary">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="alternate" type="application/atom+xml" title="{{ site.author }}" href="{{ site.url }}/feed.xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/media/css/highlight.css">
     <link rel="stylesheet" href="/media/css/style.css">
+    <script>
+      /* Show the boot overlay before first paint (no flash). No-JS users
+         never see it because the class is added here only. Safety net
+         removes it after 6s in case boot.js fails to load. */
+      (function () {
+        try {
+          var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+          var seen = sessionStorage.getItem('booted') === '1';
+          if (!reduce && !seen) {
+            document.documentElement.classList.add('is-booting');
+            window.setTimeout(function () {
+              document.documentElement.classList.remove('is-booting');
+            }, 6000);
+          }
+        } catch (e) {}
+      })();
+    </script>
   </head>
   <body>
+    <div class="boot" id="boot" aria-hidden="true">
+      <div class="boot__screen">
+        <div class="boot__log"></div>
+        <div class="boot__hint">[ 点击跳过 · click to skip ]</div>
+      </div>
+    </div>
+    <div class="crt-overlay" aria-hidden="true"><span class="crt-sweep"></span></div>
     <nav class="topnav">
       <div class="topnav-inner">
-        <a class="brand" href="{{ site.url }}/">punkmonday<span>.</span></a>
+        <a class="brand" href="{{ site.url }}/"><span class="brand-dot" aria-hidden="true"></span>punkmonday<span>.</span></a>
         <div class="topnav-links">
           <a href="{{ site.url }}/" {% if page.url == '/' %}class="active"{% endif %}>home</a>
           <a href="{{ site.url }}/about/" {% if page.url == '/about/' %}class="active"{% endif %}>about</a>
@@ -32,16 +59,22 @@
           <a href="{{ site.url }}/tags/" {% if page.url == '/tags/' %}class="active"{% endif %}>tags</a>
           <a href="{{ site.url }}/links/" {% if page.url == '/links/' %}class="active"{% endif %}>links</a>
           <button class="theme-toggle" id="theme-toggle" type="button" aria-label="切换深浅色模式">
-            <span class="icon-moon">🌙</span>
-            <span class="icon-sun">☀️</span>
+            <span class="icon-moon">&#9790;</span>
+            <span class="icon-sun">&#9728;</span>
           </button>
+        </div>
+      </div>
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker-track">
+          <span class="ticker-item">NIGHT CITY NET // BREACH PROTOCOL ACTIVE // SIGNAL 100% // W4U STUDIO // JAVA · SPRING · DOCKER · LINUX // NETRUNNER ONLINE // STAY CHROME // </span>
+          <span class="ticker-item">NIGHT CITY NET // BREACH PROTOCOL ACTIVE // SIGNAL 100% // W4U STUDIO // JAVA · SPRING · DOCKER · LINUX // NETRUNNER ONLINE // STAY CHROME // </span>
         </div>
       </div>
     </nav>
     <div id="container">
       <div id="main" role="main">
         <header>
-        <h1>{{ page.title }}</h1>
+        <h1 data-text="// {{ page.title }}"><span class="h1-prefix" aria-hidden="true">//</span>{{ page.title }}</h1>
         </header>
         <article class="content">
         {{ content }}
@@ -49,13 +82,14 @@
       </div>
     </div>
     <footer class="footer">
-      <span>© {{ site.time | date: '%Y' }} {{ site.author }}</span>
+      <span>© {{ site.time | date: '%Y' }} {{ site.author }} // ALL SYSTEMS NOMINAL</span>
       <span>
         <a href="https://github.com/punkmonday">GitHub</a>
         ·
         <a href="{{ site.url }}/feed.xml">RSS</a>
       </span>
     </footer>
+    <script type="text/javascript" src="/media/js/boot.js"></script>
     <script type="text/javascript" src="/media/js/theme.js"></script>
   </body>
 </html>
