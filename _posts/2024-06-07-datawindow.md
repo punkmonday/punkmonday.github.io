@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: 如何使用工具DataWindow2.5
+title: 如何使用DataWindow2.5
 author: punkmonday
 ---
 
