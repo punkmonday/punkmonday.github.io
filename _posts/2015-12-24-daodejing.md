@@ -2,7 +2,8 @@
 published: true
 layout: post
 title: 道德经
-categories: other
+categories:
+  - other
 tags: 
   - 模式思维
   - 道德经

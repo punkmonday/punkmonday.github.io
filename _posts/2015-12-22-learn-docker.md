@@ -2,7 +2,8 @@
 published: true
 layout: post
 author: punkmonday
-categories: docker
+categories:
+  - docker
 tags:
   - docker
 ---

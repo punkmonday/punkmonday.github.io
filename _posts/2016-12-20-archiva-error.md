@@ -8,7 +8,6 @@ categories:
 tags:
   - java
   - archiva
-publish: true
 ---
 ## archiva 2.2 无法下载已存在的jar,报错500
 

@@ -2,8 +2,7 @@
 published: true
 layout: post
 author: punkmonday
-categories: java
-tag: 
+categories:
   - java
 tags: 
   - java

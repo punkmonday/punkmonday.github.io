@@ -3,7 +3,7 @@ published: true
 layout: post
 title: windows下的packageManager
 author: punkmonday
-tag:
+tags:
   - linux
   - packageManager
   - windows

@@ -3,8 +3,8 @@ published: true
 layout: post
 title: Alfresco重建库还原
 author: punkmonday
-catigray: null
-categories: java
+categories:
+  - java
 tags: 
   - alfresco5.0
 ---

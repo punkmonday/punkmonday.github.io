@@ -4,7 +4,7 @@ layout: post
 author: punkmonday
 tags:
   - java
-catigories:
+categories:
   - java
 title: netbeans8.2 jira task repositries 无法连接设置
 ---

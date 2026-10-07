@@ -1,0 +1,103 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+#
+# ---------------------------------------------------------------------------
+# Sveltia CMS — punkmonday.github.io
+# Jekyll site on GitHub Pages. The CMS edits the Markdown in this repo and
+# commits straight back; GitHub Pages then rebuilds the site with Jekyll.
+#
+#   Admin UI : https://punkmonday.github.io/admin/
+#   Sign-in  : GitHub personal access token (PAT)
+#              · classic      -> scope "repo"
+#              · fine-grained -> this repo, "Contents: Read and write"
+# ---------------------------------------------------------------------------
+
+backend:
+  name: github
+  repo: punkmonday/punkmonday.github.io
+  branch: master
+  # Token sign-in only. To enable one-click "Sign in with GitHub", deploy an
+  # OAuth client (e.g. https://github.com/sveltia/sveltia-cms-auth) and add
+  # `base_url: <your-worker-url>` here, then drop the auth_methods line below.
+  auth_methods: [token]
+
+# Emptied optional fields are omitted from the output. This keeps posts that
+# have no front-matter `title` on Jekyll's filename-derived title, and avoids
+# writing stray empty `categories`/`tags`.
+output:
+  omit_empty_optional_fields: true
+
+site_url: https://punkmonday.github.io
+display_url: https://punkmonday.github.io
+
+# Uploaded images are stored in images/uploads/ and referenced as
+# /images/uploads/<filename>.
+media_folder: images/uploads
+public_folder: /images/uploads
+
+# Uncomment to turn every save into a pull request instead of a direct commit:
+# publish_mode: editorial_workflow
+
+collections:
+  # -------------------------------------------------------------------------
+  # Blog posts (Jekyll _posts). New files are named YYYY-MM-DD-<slug>.md to
+  # match Jekyll's convention; the date comes from the filename, so there is
+  # no `date` field.
+  # -------------------------------------------------------------------------
+  - name: posts
+    label: 文章
+    label_singular: 文章
+    icon: description
+    folder: _posts
+    create: true
+    slug:
+      template: "{{year}}-{{month}}-{{day}}-{{slug}}"
+      editable: true
+      hint: "文件名与文章 URL。中文标题会生成中文文件名；如需英文/拼音，点铅笔修改。"
+    fields:
+      - { name: layout, label: Layout, widget: hidden, default: post }
+      - { name: published, label: Published, widget: hidden, default: true }
+      - name: title
+        label: 标题
+        widget: string
+        required: false
+        hint: "留空时 Jekyll 会用文件名推导标题。"
+      - { name: author, label: 作者, widget: string, required: false, default: punkmonday }
+      - { name: categories, label: 分类, widget: list, required: false }
+      - { name: tags, label: 标签, widget: list, required: false }
+      - { name: body, label: 正文, widget: markdown }
+
+  # -------------------------------------------------------------------------
+  # Standalone pages.
+  # -------------------------------------------------------------------------
+  - name: pages
+    label: 页面
+    icon: article
+    files:
+      - name: home
+        label: 首页
+        file: index.md
+        fields:
+          - { name: title, label: 标题, widget: string }
+          - { name: layout, label: Layout, widget: hidden, default: page }
+          - name: body
+            label: 正文（Liquid 模板）
+            widget: text # plain text, so the Liquid listing template is left intact
+            required: false
+            hint: "首页由 Liquid 模板生成，请勿删除其中的 for 循环标签。"
+      - name: about
+        label: 关于
+        file: about/index.md
+        fields:
+          - { name: title, label: 标题, widget: string }
+          - { name: layout, label: Layout, widget: hidden, default: page }
+          - { name: published, label: Published, widget: hidden, default: true }
+          - { name: body, label: 正文, widget: markdown }
+      - name: links
+        label: 友情链接
+        file: links/index.md
+        fields:
+          - { name: title, label: 标题, widget: string }
+          - { name: layout, label: Layout, widget: hidden, default: page }
+          - { name: published, label: Published, widget: hidden, default: true }
+          - { name: comments, label: Comments, widget: hidden, default: "yes" }
+          - { name: body, label: 正文, widget: markdown }

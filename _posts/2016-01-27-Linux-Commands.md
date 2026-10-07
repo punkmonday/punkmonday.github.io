@@ -1,7 +1,8 @@
 ---
 published: true
 layout: post
-categories: java
+categories:
+  - java
 author: punkmonday
 tags: 
   - linux

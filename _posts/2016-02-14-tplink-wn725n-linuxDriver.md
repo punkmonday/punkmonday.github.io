@@ -2,10 +2,11 @@
 published: true
 layout: post
 title: ubuntu 15.10上安装wn725n无线网卡驱动
-tag: 
+tags:
   - linux
   - tplink
-categories: java
+categories:
+  - java
 ---
 
 

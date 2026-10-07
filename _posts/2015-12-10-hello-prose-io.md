@@ -2,7 +2,8 @@
 published: true
 layout: post
 title: Hello prose.io
-categories: other
+categories:
+  - other
 tags: 
   - 其它
   - prose.io
